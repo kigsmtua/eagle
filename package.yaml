@@ -26,7 +26,7 @@ library:
   source-dirs: src
 
 executables:
-  eagle-exe:
+  eagle:
     main:                Main.hs
     source-dirs:         app
     ghc-options:
@@ -46,3 +46,5 @@ tests:
     - -with-rtsopts=-N
     dependencies:
     - eagle
+    - tasty-quickcheck
+    - hspec
